@@ -91,7 +91,7 @@ header ul .txt > h1{
 
 /* SECTION IMG  */
 section ul{
-  width: var(--full); 
+  width: var(--full);
   height: 40%;
   display: flex;
   list-style: none;
