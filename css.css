@@ -70,7 +70,6 @@ header ul{
   list-style: none;
 }
 header ul > .logo{
-/* border: 1px solid black; */
   width: 40%;
   min-width: 160px;
   height: var(--full);
@@ -88,9 +87,23 @@ header ul .txt > h1{
   height: 30%;
   text-align: center;
   padding: 5% 0 0;
-/*   border: 1px solid black; */
 }
 
+/* SECTION IMG  */
+section ul{
+  width: var(--full); 
+  height: 40%;
+  display: flex;
+  list-style: none;
+}
+section ul li{
+  width: 25%;
+  height: var(--full);
+}
+section ul li > img{
+  width: var(--full);
+  height: auto;
+}
 @media only screen and (max-width: 780px){
   nav{
     width: 75%;
@@ -110,12 +123,9 @@ header ul .txt > h1{
     height: 8%;
     display: flex;
     justify-content: left;
-/*     align-items: center; */
     color: white;
     padding: 4%;
     transition: 0.07s;
-
-/*     border: 1px solid black; */
   }
   header{
     width: var(--full);
