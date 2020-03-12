@@ -2,6 +2,7 @@
 
 :root{
   --full: 100%;
+  --coloP: #00354A;
 }
 *{
   box-sizing: border-box;
@@ -25,7 +26,7 @@ nav, header, footer, section{
 }
 nav{
   height: 4%;
-  background-color: #00354A;
+  background-color: var(--coloP);
 }
 header{
   height: 52%;
@@ -42,7 +43,7 @@ section{
 
 /* DIV HEADER  */
 nav ul{
-  width: 30%;
+  width: 50%;
   height: var(--full);
   display: flex;
   flex-direction: row;
@@ -73,7 +74,7 @@ header ul > .logo{
   width: 40%;
   min-width: 160px;
   height: var(--full);
-  background-image: url("logo.svg");
+  background-image: url("img/logo.svg");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,12 +105,30 @@ section ul li > img{
   width: var(--full);
   height: auto;
 }
+#menuIco{
+  display: none;
+  background-color:  var(--coloP);
+}
 @media only screen and (max-width: 780px){
+  #menuIco{
+    width: var(--full);
+    display: inherit;
+    height: 5%;
+  }
+  #menuIco img{
+    width: 8%;
+    display: inherit;
+    height: auto;
+    padding: 0.8%;
+  }
   nav{
     width: 75%;
     height: var(--full);
-    position: absolute;
+    position: fixed;
+    left: 0;
+    top: 0;
     box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.8);
+    overflow:hidden;
   }
   nav ul{
     width: var(--full);
